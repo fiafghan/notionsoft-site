@@ -1,9 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 const HeroSlider = () => {
@@ -48,20 +46,20 @@ const HeroSlider = () => {
         </div>
 
         {/* Right Image Stack */}
-        <div className="flex flex-col space-y-4 items-center md:items-end">
+        <div className="flex flex-col space-y-6 items-center md:items-end mt-8 md:mt-0">
           {certifications.map((src, index) => (
             <motion.div 
               key={index} 
               initial={{ opacity: 0, x: 50 }} 
               animate={{ opacity: 1, x: 0 }} 
               transition={{ delay: 0.2 * index }}
-              className="bg-white p-2 rounded-md shadow-md w-36 h-30 flex items-center justify-center"
+              className="bg-white p-4 rounded-md shadow-md w-36 h-36 flex items-center justify-center"
             >
               <Image
                 src={src}
                 alt={`Certification ${index + 1}`}
-                width={100}
-                height={40}
+                width={120}   // Set width for uniform size
+                height={80}   // Set height for uniform size
                 className="object-contain"
               />
             </motion.div>
