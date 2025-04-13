@@ -143,22 +143,7 @@ export default function AboutUs() {
           </div>
         </section>
 
-        {/* Map Section */}
-        <section className="py-16 bg-gray-100">
-          <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-3xl font-semibold text-center text-orange-600 mb-6">Our Office Location</h2>
-            <div className="rounded-xl overflow-hidden shadow-lg border border-gray-300">
-              <iframe
-                src="https://maps.app.goo.gl/D9YuxyPqCFr9zYJo9"
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
-        </section>
+       
       </section>
 
       <Footer />
